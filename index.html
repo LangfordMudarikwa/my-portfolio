@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Langford's Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<style>
+		
+		.header {
+			background-color: black;
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.nav {
+			display: flex;
+			justify-content: center;
+			gap: 30px;
+			background-color: #222;
+			padding: 15px;
+			border-radius: 8px;
+			flex-wrap: wrap;
+		}
+
+		.nav a {
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+			transition: 0.3s;
+		}
+
+		.nav a:hover {
+			color: #00ffcc;
+	
+		}
+
+		.main {
+			padding: 20px;
+		}
+
+		.footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+			padding: 10px;
+		}
+
+		body{
+			background: linear-gradient(to right, #74ebd5, #ACB6E5);
+			margin: 0;
+			text-align: center;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		#title {
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.section {
+			background-color: white;
+			margin: 20px 0;
+			padding: 25px;
+			border-radius: 12px;
+			box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+			flex: 1;
+		}
+
+		h1{
+			font-size: 32px;
+			font-style: oblique;
+			color: black;
+			margin-bottom: 32px;
+		}
+
+		h2{
+			margin-bottom: 10px;
+			
+		}
+
+		p{
+			color: #333;
+			line-height: 1.6;
+		}
+
+		.section ul{
+			color: darkblue;
+			list-style-position: inside;
+			text-align: center;
+			display: inline-block;
+			text-align: left;
+		}
+
+		.section a{
+			display: block;
+			
+		}
+
+		.container {
+			width: 90%;
+			max-width: 900px;
+			margin: auto;
+			padding: 20px 0;
+		}
+
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+
+		.row {
+			display: flex;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+		.footer {
+			background-color: #222;
+			color: white;
+			text-align: center;
+			padding: 15px;
+			border-radius: 10px;
+			margin-top: 20px;
+		}
+
+		.btn {
+			display: inline-block;
+			background-color: #222;
+			color: white;
+			padding: 10px 15px;
+			margin: 5px 0;
+			border-radius: 8px;
+			text-decoration: none;
+			transition: 0.3s;
+		}
+
+		.btn:hover {
+			background-color:#00ffcc;
+			color: black;
+		}
+		.dark-mode {
+			background: #121212;
+			color: white;
+		}
+
+		.projects {
+			background-color: #f5f5f5;
+			padding: 15px;
+			margin: 10px 0;
+			border-radius: 8px;
+			text-align: left;
+		}
+
+		.dark-mode .project {
+			background-color: #2a2a2a;
+		}
+
+		.dark-mode h1,
+		.dark-mode h2,
+		.dark-mode h3 {
+			color: #808080;
+		}
+
+		.dark-mode a{
+			color: #00ffcc;
+		}
+	
+	</style>
+
+
+</head>
+
+	<body>
+
+	
+
+		<div class="container">
+
+				<button class="btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+				<div class="nav">
+					<a href="#about">About</a>
+					<a href="#skills">Skills</a>
+					<a href="#links">Links</a>
+					<a href="#image">Image</a>
+					<a href="#contact">Contact</a>
+					<a href="#projects">Projects</a>
+					
+				</div>
+
+				<div class="main">
+					<h1>Hi, I'm Langford</h1>
+					<p>Electronics & Computer Engineering Graduate | Embedded Systems Enthusiast</p>
+				</div>
+
+				
+
+				<div class="row">
+					<div class="section" id="about">
+
+						<h2>About Myself</h2>
+
+						<p id="aboutText">My name is Langford Tinotenda Mudarikwa. I am an Electronics and Computer Engineering student at the University of Namibia, currently awaiting graduation.
+
+						I am a highly motivated and passionate individual who enjoys working on practical technical solutions, especially those that involve both hardware and software.
+
+						During my final year, I worked on a speed detection and capture system using ultrasonic sensors and a camera for image capture. This project helped me develop a strong understanding of embedded systems and significantly improved my problem-solving skills.
+
+						I am eager to apply the knowledge I have gained in a professional environment, while continuing to learn and grow as an engineer.</p>
+
+						<button onclick="sayHello()">Click Me</button>
+
+					</div>
+
+
+					<div class="section" id="skills">
+						<h2>My Skills</h2>
+
+						<ul>
+						<li>Programming</li>
+						<li>Raspberry pi</li>
+						<li>Python</li>
+						<li>Web Development</li>
+						<li>HTML & CSS</li>
+						</ul>
+					</div>
+
+					<div class="section" id="Projects">
+						<h2>Projects</h2>
+
+						<div class="project">
+							<h3>Speed Detection System</h3>
+								<p>
+									Designed a vehicle speed detection system using ultrasonic sensors and a camera. The system calculates speed and captures images of speeding vehicles. The images of the speeding vehicles are then saved to the details of when and where the offence occured.
+								</p>
+						</div>
+
+						<div class="project">
+							<h3>Self-Balancing Robot</h3>
+								<p>
+									Built a two-wheel self-balancing robot using Arduino, MPU9250 sensor, and motor drivers.
+								</p>
+						</div>
+
+
+					</div>
+
+
+				</div>
+
+				
+
+					<div class="section"id="links">
+						<h2>My Links</h2>
+						<a href="https://www.instagram.com/khoffiee_/" class="btn">Visit Instagram</a>
+
+						<a href="https://www.facebook.com/langford.mudarikwa" class="btn">Visit facebook</a>
+						<a href="cv.pdf" class="btn">Download CV</a>
+					</div>
+
+					<div class="section" id="image">
+						<h2>My Image</h2>
+						<img src="langford.jpg" alt="Me">
+					</div>
+
+					<div class="section" id="contact">
+						<h2>Contact Me</h2>
+						<p>Email:mudarikalangford@gmail.com</p>
+						<p>Phone: +264813214608</p>
+					</div>
+					
+					<div class="footer">
+						<p>@ 2026 Langford | ALL RIGHTS RESERVED</p>
+					</div>
+
+				
+		</div>
+
+				<script>
+					function sayHello() {
+						document.getElementById("aboutText").innerHTML = 
+							"🎉 You just changed the text using JavaScript!";
+					}
+				</script>
+
+				<script>
+					function toggleDarkMode() {
+						document.body.classList.toggle("dark-mode")
+					}
+				</script>
+
+		
+	
+	</body>
+
+
+
+</html>
